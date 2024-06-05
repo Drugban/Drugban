@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+
+@font-face {
+   font-family: 'Futura PT', sans-serif;
+   src: url(/assets/fonts/FuturaPT-Bold.woff);
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: 'Futura PT', sans-serif;
+   src: url(/assets/fonts/FuturaPT-ExtraBold.woff);
+   font-weight: 800;
+}
+
+@font-face {
+   font-family: 'Futura PT', sans-serif;
+   src: url(/assets/fonts/FuturaPT-Medium.woff);
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'Futura PT', sans-serif;
+   src: url(/assets/fonts/FuturaPT-Light.woff);
+   font-weight: 500;
+}
+
+@font-face {
+   font-family: 'Reddit Mono', sans-serif;
+   src: url(/assets/fonts/);
+   font-weight: 500;
+}

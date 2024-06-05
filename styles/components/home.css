@@ -1,0 +1,121 @@
+.home .col-8 {
+   padding: clamp(20px, 5vw, 140px) 0 0;
+}
+
+.home .col-4 {
+   padding: clamp(var(--base), 3vw, var(--xl6));
+   display: grid;
+   place-items: center;
+}
+
+.home__title {
+   letter-spacing: clamp(-2px, -0.5vw, -5px);
+}
+
+.home__prof {
+   font-size: clamp(var(--xs), 2vw, var(--xl3));
+}
+
+.home__title-wrapper {
+   margin-bottom: clamp(var(--xs), 1vw, var(--xl));
+}
+
+.home__text {
+   max-width: 40vw;
+}
+
+.home__soc {
+   display: inline-flex;
+   align-items: center;
+   gap: clamp(20px, 3vw, 30px);
+   margin-top: clamp(10px, 2vw, 20px);
+
+   a {
+      border: 1px solid var(--dark);
+      border-radius: 50%;
+      padding: 6px;
+      display: grid;
+      place-items: center;
+   }
+
+   svg {
+      width: clamp(12px, 2vw, 30px);
+   }
+}
+
+
+.home__img {
+   width: clamp(50%, 40vw, 100%);
+   border-radius: 50%;
+   box-shadow: 0 0 30px 4px var(--dark);
+}
+
+.home__info {
+   flex-wrap: wrap;
+   margin-top: clamp(var(--base), 2vw, var(--xl));
+
+   .col-4 {
+      padding: clamp(var(--xxs), 2vw, var(--xl));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+   }
+
+   p {
+      font-size: clamp(var(--xs), 1vw, var(--base));
+      font-weight: 500;
+      line-height: clamp(var(--base), 2vw, var(--xl));
+      max-width: 50px;
+   }
+
+   h1 {
+      font-size: clamp(var(--xl3), 5vw, var(--xl7));
+      font-weight: 700;
+   }
+}
+
+/* @media (max-width: 1536px) {} */
+
+/* @media (max-width: 1280px) {} */
+
+/* @media (max-width: 1024px) {} */
+
+@media (max-width: 768px) {
+   .home {
+      text-align: center;
+   }
+
+   .home .row {
+      flex-direction: column;
+   }
+
+   .home .col-4,
+   .home .col-8 {
+      width: 100% !important;
+   }
+
+   .home .col-4 {
+      order: 1;
+   }
+
+   .home .col-8 {
+      order: 2;
+   }
+
+   .home__text {
+      max-width: 100vw;
+   }
+
+   .home__info {
+      display: none !important;
+   }
+
+   .home__img {
+      box-shadow: 0 0 15px 1px var(--dark);
+   }
+}
+
+/* @media (max-width: 640px) {} */
+
+/* @media (max-width: 475px) {} */

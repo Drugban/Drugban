@@ -1,0 +1,119 @@
+.resume .col-9 {
+   padding-left: var(--xl);
+}
+
+.resume .col-3 {
+   padding-right: var(--xl);
+   border-right: 2px solid rgb(108, 117, 125);
+}
+
+.resume__title {
+   margin-bottom: clamp(var(--base), 3vh, var(--xl2));
+}
+
+.resume__btn-group {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: clamp(var(--xl), 2vw, var(--xl3));
+}
+
+.resume__btn {
+   padding: clamp(var(--xxs), 1vw, var(--xs)) clamp(var(--sm), 3vw, var(--xl2)) !important;
+   font-size: clamp(var(--xxs), 2vw, var(--xl)) !important;
+   border-radius: clamp(var(--xxs), 1vw, var(--sm)) !important;
+}
+
+
+.resume__desc-title {
+   margin-bottom: clamp(var(--xs), 1vw, var(--xl));
+}
+
+.resume__text {
+   margin-bottom: clamp(var(--xxs), 1vw, var(--lg));
+}
+
+.resume__line {
+   margin-block-end: clamp(var(--xs), 1vw, var(--xl));
+}
+
+
+.resume__skill-ul {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(clamp(var(--xl4), 6vw, var(--xl7)), 1fr));
+   gap: clamp(var(--xl), 3vw, var(--xl3));
+}
+
+.resume__skill-list {
+   border: 2px solid var(--dark);
+   border-radius: 50%;
+   padding: clamp(var(--xxs), 0.2vw, var(--sm));
+   transition: 0.3s;
+
+   svg {
+      width: 100%;
+      fill: var(--dark);
+      transition: 0.3s;
+   }
+}
+
+.resume__skill-list-min {
+   border: 2px solid #0f172a9d;
+
+   svg {
+      fill: #0f172a9d;
+   }
+}
+
+@media (hover :hover) {
+   .resume__skill-list:hover {
+      border-color: var(--emerald);
+
+      svg {
+         fill: var(--emerald);
+      }
+   }
+
+   .resume__skill-list-min:hover {
+      border-color: #0f172a9d;
+
+      svg {
+         fill: #0f172a9d;
+      }
+   }
+}
+
+@media (max-width: 768px) {
+
+   .resume .col-3,
+   .resume .col-9 {
+      width: 100% !important;
+   }
+
+   .resume .col-3 {
+      border-right: 0;
+      border-bottom: 2px solid rgb(108, 117, 125);
+      padding-right: calc(var(--bs-gutter-x)* .5);
+      padding-bottom: var(--xl);
+      margin-bottom: var(--xl);
+   }
+
+   .resume__btn-group {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .resume__title {
+      text-align: center;
+   }
+
+   .resume__desc-title {
+      text-align: center;
+   }
+
+   .resume__line {
+      display: none;
+   }
+}

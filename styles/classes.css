@@ -1,0 +1,35 @@
+.row {
+   display: flex !important;
+   width: 100% !important;
+}
+
+.col-4 {
+   width: calc((100% / 12) *4) !important;
+   padding-inline: var(--xs);
+}
+
+.col-8 {
+   width: calc((100% / 12) *8) !important;
+   padding-inline: var(--xs);
+}
+
+.d-block {
+   display: block !important;
+}
+
+.d-none {
+   display: none !important;
+}
+
+.d-flex {
+   display: flex !important;
+}
+
+.justify-content-center {
+   justify-content: center !important;
+}
+
+.align-items-center {
+   align-items: center !important;
+}
+

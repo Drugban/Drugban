@@ -1,0 +1,217 @@
+:root {
+   /* Color */
+   --dark: #0f172a;
+   --light: #f8fafc;
+   --sky: #06b6d4;
+   --emerald: #10b981;
+
+   /* emerald rgb(16, 185, 129) */
+   /* sky rgb(6, 182, 212)*/
+
+   /* Size */
+   --xxs: 8px;
+   --xs: 12px;
+   --sm: 14px;
+   --base: 16px;
+   --lg: 18px;
+   --xl: 20px;
+   --xl2: 24px;
+   --xl3: 30px;
+   --xl4: 36px;
+   --xl5: 48px;
+   --xl6: 60px;
+   --xl7: 72px;
+   --xl8: 96px;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: inherit;
+   color: inherit;
+   line-height: calc(1em + 0.5rem);
+   user-select: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   outline: none;
+   font-style: inherit;
+   font-family: inherit;
+}
+
+html,
+body {
+   scroll-behavior: smooth;
+}
+
+body {
+   background: var(--light);
+   color: var(--dark);
+}
+
+img,
+picture,
+canvas,
+svg,
+video {
+   display: block;
+   user-select: none !important;
+}
+
+button {
+   display: inline-block;
+   padding: 0;
+   border: none;
+   background: none;
+   cursor: pointer;
+   z-index: 9;
+}
+
+div {
+   line-height: 1;
+}
+
+a {
+   line-height: 1;
+   text-decoration: none !important;
+   transition: color .3s;
+   z-index: 9;
+}
+
+b,
+strong {
+   color: var(--sky);
+   font-weight: 900;
+}
+
+section {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   padding-top: 15vh;
+   padding-bottom: 15vh;
+}
+
+ul,
+ol {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+::-webkit-scrollbar {
+   width: 0;
+}
+
+h1::first-letter,
+h2::first-letter,
+h3::first-letter,
+h4::first-letter,
+h5::first-letter,
+h6::first-letter,
+p::first-letter,
+strong::first-letter,
+button::first-letter,
+a::first-letter {
+   text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+strong,
+button,
+span,
+input {
+   z-index: 10;
+   position: relative;
+}
