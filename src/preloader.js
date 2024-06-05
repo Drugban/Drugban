@@ -7,5 +7,5 @@ document.body.onload = function () {
 			preloader.classList.add('load')
 			wrap.style.display = 'block'
 		}
-	}, 1)
+	}, 2000)
 }
