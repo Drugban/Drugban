@@ -44,6 +44,10 @@
 	color: rgba(33, 37, 41, 0.75);
 }
 
+.contact__btn{
+	margin-top: 10px;
+}
+
 @media (max-width: 1024px) {
 	.contact .col-4 img {
 		scale: 1.2;
