@@ -1,130 +1,122 @@
 .mono {
-   font-family: "Reddit Mono", monospace !important;
+	font-family: 'Reddit Mono', monospace !important;
 }
 
 .futura {
-   font-family: "Futura PT", sans-serif !important;
+	font-family: 'Futura PT', sans-serif !important;
 }
 
 .btn {
-   font-weight: 600;
-   display: inline-block;
-   text-decoration: none;
-   background: var(--emerald) !important;
-   padding: clamp(4px, 1vw, var(--xxs)) clamp(var(--xs), 2vw, var(--xl)) !important;
-   font-size: clamp(var(--xxs), 1vw, var(--lg)) !important;
-   border-radius: clamp(2px, 1vw, var(--xxs)) !important;
-   color: var(--light) !important;
-   box-shadow: 0 2.5px 5px rgba(16, 185, 129, 0.5),
-      0 1.5px 1.5px rgba(16, 185, 129, 0.5),
-      0 0 25px -2.5px var(--emerald);
+	font-weight: 600;
+	display: inline-block;
+	text-decoration: none;
+	background: var(--emerald) !important;
+	padding: clamp(4px, 1vw, var(--xxs)) clamp(var(--xs), 2vw, var(--xl)) !important;
+	font-size: clamp(var(--xxs), 1vw, var(--lg)) !important;
+	border-radius: clamp(2px, 1vw, var(--xxs)) !important;
+	color: var(--light) !important;
 
-   transition: transform .3s, box-shadow .3s;
-   outline: none;
-   border: none;
+	transition: transform 0.3s, box-shadow 0.3s;
+	outline: none;
+	border: none;
 }
 
-
-
-@media (hover :hover) {
-   .btn:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 3.5px 3.5px rgba(16, 185, 129, 0.25),
-         0 2.5px 2.5px rgba(16, 185, 129, 0.22),
-         0 0 30px -2.5px var(--emerald);
-   }
+@media (hover: hover) {
+	.btn:hover {
+		transform: translateY(-4px);
+	}
 }
 
 .container {
-   max-width: clamp(225px, 70vw, 1850px) !important;
-   padding-left: 15px;
-   padding-right: 15px;
-   margin-left: auto;
-   margin-right: auto
+	max-width: clamp(225px, 70vw, 1850px) !important;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .title-md {
-   font-size: clamp(var(--xl), 3vw, var(--xl5));
-   font-weight: 900;
+	font-size: clamp(var(--xl), 3vw, var(--xl5));
+	font-weight: 900;
 }
 
 .title {
-   font-weight: 900;
-   font-size: clamp(var(--xl3), 5vw, var(--xl8));
+	font-weight: 900;
+	font-size: clamp(var(--xl3), 5vw, var(--xl8));
 }
 
 .text {
-   font-weight: 400;
-   font-size: clamp(var(--xs), 1.5vw, var(--xl3));
+	font-weight: 400;
+	font-size: clamp(var(--xs), 1.5vw, var(--xl3));
 }
 
 .loader {
-   width: 50px;
-   aspect-ratio: 1;
-   display: grid;
-   border: 4px solid #0000;
-   border-radius: 50%;
-   border-right-color: #25b09b;
-   animation: l15 1s infinite linear;
+	width: 50px;
+	aspect-ratio: 1;
+	display: grid;
+	border: 4px solid #0000;
+	border-radius: 50%;
+	border-right-color: #25b09b;
+	animation: l15 1s infinite linear;
 }
 
 .loader::before,
 .loader::after {
-   content: "";
-   grid-area: 1/1;
-   margin: 2px;
-   border: inherit;
-   border-radius: 50%;
-   animation: l15 2s infinite;
+	content: '';
+	grid-area: 1/1;
+	margin: 2px;
+	border: inherit;
+	border-radius: 50%;
+	animation: l15 2s infinite;
 }
 
 .loader::after {
-   margin: 8px;
-   animation-duration: 3s;
+	margin: 8px;
+	animation-duration: 3s;
 }
 
 @keyframes l15 {
-   100% {
-      transform: rotate(1turn)
-   }
+	100% {
+		transform: rotate(1turn);
+	}
 }
 
 .loader-wrap {
-   position: fixed;
-   left: 0;
-   top: 0;
-   background: var(--light);
-   z-index: 10000;
-   width: 100%;
-   height: 100%;
-   visibility: visible;
-   opacity: 1;
-   transition: all 1s;
-   padding-right: 8px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: var(--light);
+	z-index: 10000;
+	width: 100%;
+	height: 100%;
+	visibility: visible;
+	opacity: 1;
+	transition: all 1s;
+	padding-right: 8px;
 
-   &.load {
-      visibility: hidden;
-      opacity: 0;
-   }
+	&.load {
+		visibility: hidden;
+		opacity: 0;
+	}
 }
 
 .follow-cursor {
-   display: block;
-   width: 1px;
-   height: 1px;
-   border-radius: 50%;
-   transform: translateY(-50%) translateX(-50%);
-   position: absolute;
-   box-shadow: 0 0 150px 60px var(--emerald);
-   z-index: 999999999;
-   pointer-events: none;
-   transition: width 0.4s, height 0.4s, border-radius 0.4s, background .4s;
+	display: block;
+	width: 1px;
+	height: 1px;
+	border-radius: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	position: absolute;
+	box-shadow: 0 0 150px 60px var(--emerald);
+	z-index: 999999999;
+	pointer-events: none;
+	transition: width 0.4s, height 0.4s, border-radius 0.4s, background 0.4s;
 }
 
 .follow-cursor_active {
-   height: 128px;
-   width: 128px;
-   background: transparent;
+	height: 128px;
+	width: 128px;
+	background: transparent;
 }
 
 /* @media (max-width: 1536px) {} */
