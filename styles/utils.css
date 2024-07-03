@@ -42,7 +42,7 @@
 
 .title {
 	font-weight: 900;
-	font-size: clamp(var(--xl3), 5vw, var(--xl8));
+	font-size: clamp(var(--xl3), 5vw, var(--xl6));
 }
 
 .text {
